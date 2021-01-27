@@ -1,0 +1,6 @@
+﻿  Adapter.cpp
+  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_4\Laba_4\Main.cpp(36,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_4\Laba_4\Main.cpp(48,2): warning C4551: в вызове функции отсутствует список аргументов
+  Создание кода...
+  Laba_4.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_4\Debug\Laba_4.exe
