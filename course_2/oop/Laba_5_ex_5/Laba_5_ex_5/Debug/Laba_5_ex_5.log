@@ -1,0 +1,15 @@
+﻿  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Laba_5_ex_5\Cache.h(40,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Laba_5_ex_5\Cache.h(21,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Laba_5_ex_5\Cache.h(19): message : во время компиляции функции-члена класс шаблон "std::string Cache<int>::contains(T)"
+          with
+          [
+              T=int
+          ]
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Laba_5_ex_5\Main.cpp(21): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::string Cache<int>::contains(T)"
+          with
+          [
+              T=int
+          ]
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Laba_5_ex_5\Main.cpp(11): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Cache<int>"
+  Laba_5_ex_5.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_5\Debug\Laba_5_ex_5.exe

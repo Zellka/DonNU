@@ -1,0 +1,29 @@
+﻿  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(101,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(109,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(128,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\Main.cpp(24,19): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(32,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(30): message : во время компиляции функции-члена класс шаблон "void DataManager<int>::push(T [],size_t)"
+          with
+          [
+              T=int
+          ]
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\Main.cpp(8): message : выполняется компиляция ссылки на экземпляр шаблон функции "void DataManager<int>::push(T [],size_t)"
+          with
+          [
+              T=int
+          ]
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\Main.cpp(5): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "DataManager<int>"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(35,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(68,15): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(59): message : во время компиляции функции-члена класс шаблон "void DataManager<int>::deserize(void)"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(48): message : выполняется компиляция ссылки на экземпляр шаблон функции "void DataManager<int>::deserize(void)"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(54,2): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(52): message : во время компиляции функции-члена класс шаблон "void DataManager<int>::seralize(void)"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Laba_5_ex_1\DataManager.h(25): message : выполняется компиляция ссылки на экземпляр шаблон функции "void DataManager<int>::seralize(void)"
+  Laba_5_ex_1.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_5\Laba_5_ex_1\Debug\Laba_5_ex_1.exe
