@@ -1,0 +1,10 @@
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\bin\Debug\4 лаба.exe.config
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\bin\Debug\4 лаба.exe
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\bin\Debug\4 лаба.pdb
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\4 лаба.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\_4_лаба.CopyrighterForm.resources
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\_4_лаба.Properties.Resources.resources
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\4 лаба.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\4 лаба.exe
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\4 лаба.pdb
+C:\Users\ACER\Documents\2 Инфа\4 лаба\4 лаба\obj\Debug\_4_лаба.AddLogo.resources
