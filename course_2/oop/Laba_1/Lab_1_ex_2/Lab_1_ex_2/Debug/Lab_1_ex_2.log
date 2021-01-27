@@ -1,0 +1,5 @@
+﻿  ConvertArray.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_1\Lab_1_ex_2\Lab_1_ex_2\ConvertArray.cpp(53,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_1\Lab_1_ex_2\Lab_1_ex_2\ConvertArray.cpp(55,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_1\Lab_1_ex_2\Lab_1_ex_2\ConvertArray.cpp(92,2): warning C4551: в вызове функции отсутствует список аргументов
+  Lab_1_ex_2.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_1\Lab_1_ex_2\Debug\Lab_1_ex_2.exe
