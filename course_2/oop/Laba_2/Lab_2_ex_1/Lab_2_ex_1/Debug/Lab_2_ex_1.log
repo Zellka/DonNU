@@ -1,0 +1,16 @@
+﻿  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(24,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(50,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(51,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(58,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(59,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(75,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Matrix.h(77,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(32,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(38,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(45,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(51,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(57,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Vector.h(64,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Lab_2_ex_1\Main.cpp(29,5): warning C4551: в вызове функции отсутствует список аргументов
+  Lab_2_ex_1.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_1\Debug\Lab_2_ex_1.exe

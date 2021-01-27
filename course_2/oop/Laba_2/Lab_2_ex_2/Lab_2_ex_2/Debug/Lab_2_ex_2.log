@@ -1,0 +1,8 @@
+﻿  Fraction .cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_2\Lab_2_ex_2\Fraction .cpp(114,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_2\Lab_2_ex_2\Fraction .cpp(115,17): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_2\Lab_2_ex_2\Fraction .cpp(122,26): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_2\Lab_2_ex_2\Main.cpp(79,2): warning C4551: в вызове функции отсутствует список аргументов
+  Создание кода...
+  Lab_2_ex_2.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_2\Lab_2_ex_2\Debug\Lab_2_ex_2.exe
