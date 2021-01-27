@@ -1,2 +1,2 @@
 # DonNU
-![](DonNU/donnu.png)
+![](donnu.png)
