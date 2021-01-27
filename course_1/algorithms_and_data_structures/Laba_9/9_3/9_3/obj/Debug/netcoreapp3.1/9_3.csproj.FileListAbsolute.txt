@@ -1,0 +1,11 @@
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.exe
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.deps.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.runtimeconfig.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.runtimeconfig.dev.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.dll
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\bin\Debug\netcoreapp3.1\9_3.pdb
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\obj\Debug\netcoreapp3.1\9_3.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\obj\Debug\netcoreapp3.1\9_3.AssemblyInfoInputs.cache
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\obj\Debug\netcoreapp3.1\9_3.AssemblyInfo.cs
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\obj\Debug\netcoreapp3.1\9_3.dll
+C:\Users\ACER\Documents\1 Программирование\Лабы\Laba_9\9_3\9_3\obj\Debug\netcoreapp3.1\9_3.pdb
