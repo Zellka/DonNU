@@ -1,0 +1,1 @@
+System.Windows.Forms.ListView, Items.Count: 1, Items[0]: ListViewItem: {19.03.2020}

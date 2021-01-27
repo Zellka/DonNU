@@ -1,0 +1,13 @@
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\bin\Debug\2 лаба-1.exe.config
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\bin\Debug\2 лаба-1.exe
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\bin\Debug\2 лаба-1.pdb
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\2 лаба-1.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.Properties.Resources.resources
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\2 лаба-1.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\2 лаба-1.exe
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\2 лаба-1.pdb
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.AutorizationForm.resources
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.OrganizerForm.resources
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.AddEventForm.resources
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.FindForm.resources
+C:\Users\ACER\Documents\2 Инфа\2 лаба-1\2 лаба-1\obj\Debug\_2_лаба_1.EditForm.resources
