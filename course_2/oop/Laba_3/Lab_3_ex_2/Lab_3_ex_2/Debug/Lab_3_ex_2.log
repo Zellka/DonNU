@@ -1,0 +1,13 @@
+﻿  Main.cpp
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Minibus.h(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Minibus.h(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Minibus.h(7,24): warning C4584: Minibus: базовый класс "IFuelConsumer" уже является базовым классом для "Car"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\IFuelConsumer.h(3): message : см. объявление "IFuelConsumer"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Car.h(7): message : см. объявление "Car"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\PassengerCar.h(3,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\PassengerCar.h(4,10): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\PassengerCar.h(7,29): warning C4584: PassengerCar: базовый класс "IFuelConsumer" уже является базовым классом для "Car"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\IFuelConsumer.h(3): message : см. объявление "IFuelConsumer"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Car.h(7): message : см. объявление "Car"
+C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Lab_3_ex_2\Main.cpp(40,2): warning C4551: в вызове функции отсутствует список аргументов
+  Lab_3_ex_2.vcxproj -> C:\Users\ACER\Documents\1 УНИВЕР\1 Программирование\C++\Labs\Laba_3\Lab_3_ex_2\Debug\Lab_3_ex_2.exe
