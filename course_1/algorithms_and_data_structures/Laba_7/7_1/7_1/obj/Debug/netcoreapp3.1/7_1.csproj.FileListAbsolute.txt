@@ -1,0 +1,11 @@
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.exe
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.deps.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.runtimeconfig.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.runtimeconfig.dev.json
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.dll
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\bin\Debug\netcoreapp3.1\7_1.pdb
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\obj\Debug\netcoreapp3.1\7_1.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\obj\Debug\netcoreapp3.1\7_1.AssemblyInfoInputs.cache
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\obj\Debug\netcoreapp3.1\7_1.AssemblyInfo.cs
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\obj\Debug\netcoreapp3.1\7_1.dll
+C:\Users\ACER\Documents\1 Программирование\Лабы\7_1\7_1\obj\Debug\netcoreapp3.1\7_1.pdb
