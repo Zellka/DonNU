@@ -1,2 +1,3 @@
-# DonNU
-Repository stores my code from various tasks from Computer Science program 
+# Repository structure
+* 1 course
+* 2 course
