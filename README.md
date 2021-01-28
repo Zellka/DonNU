@@ -7,3 +7,5 @@
 * [Object-oriented programming](https://github.com/IlonaZellka/DonNU/tree/main/course_2/oop)
 * [Computer graphics](https://github.com/IlonaZellka/DonNU/tree/main/course_2/computer_graphics)
 * [Assembler](https://github.com/IlonaZellka/DonNU/tree/main/course_2/assembler)
+* Script Programming
+* Database
