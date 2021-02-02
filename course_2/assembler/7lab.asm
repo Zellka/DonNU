@@ -3,8 +3,7 @@ assume cs:nata
 org 100h
 begin: jmp main
 ;--------------------------------- DATA
-;10 cимволов на месяц
-Gorod DB 10,'January  ',20,'February ' 
+Month DB 10,'January  ',20,'February ' 
 DB 30,'March    ',40,'April    '
 DB 50,'May      ',60,'June     '
 DB 75,'July     ',80,'August   '
@@ -12,7 +11,7 @@ DB 90,'September',15,'October  '
 
 Rezult DB 9 Dup(?),'$'
 Buf DB 3,3 Dup(?)
-Distance DB ?
+Discharge DB ?
 Mes DB 'Not found!$'
 Eter DB 10,13,'$'
 Podskaz DB 'Enter the amount of water discharge:$'
@@ -38,7 +37,7 @@ mov bl,buf+3
 sub bl,30h
 ; Складываем ------
 add al,bl
-mov distance,al ; сохраняем в distance
+mov discharge,al ; сохраняем в distance
 ; -------- Переход на новую строку ---
 mov ah,09h
 lea dx,eter
@@ -47,8 +46,8 @@ int 21h
 cld ; искать слева направо
 
 mov cx,117 ; сколько байт сканировать
-lea di,gorod ; строка, где искать
-mov al,distance ; что искать
+lea di,month ; строка, где искать
+mov al,discharge ; что искать
 repne scasb ; поиск
 je @m2
 ; ------- Сообщение об отсутствии месяца
