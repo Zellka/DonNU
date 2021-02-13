@@ -86,3 +86,29 @@ def generate_array():
     print(n, new_size)
    
 generate_array()
+
+#Напишите программу, имитирующую работу банкомата. Выберите структуру данных для хранения купюр разного достоинства в заданном
+#количестве. При вводе пользователем запрашиваемой суммы денег, скрипт должен вывести на консоль количество купюр подходящего
+#достоинства. Если имеющихся денег не хватает, то необходимо напечатать сообщение «Операция не может быть выполнена!».
+#Например, при сумме 5370 рублей на консоль должно быть выведено «5*1000 + 3*100 + 1*50 + 2*10». --9
+
+def imitation_bank(money):
+
+    bank_money = {1000: 7, 500: 4, 100: 8, 50: 4, 10: 2}
+    output_money = []
+
+    for value, quantity in bank_money.items():
+        if money < value * quantity and quantity != 0:
+            quantity = money//value
+            
+        output_money.append((quantity, value))
+        money -= value * quantity
+        bank_money[value] -= quantity
+     
+    if money!=0:
+        print("Операция не может быть выполнена!")
+
+    [print(f"{i}*{j}", end=" ") for i, j in output_money if money == 0]
+    
+
+imitation_bank(int(input("Введите сумму: ")))
