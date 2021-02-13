@@ -112,3 +112,15 @@ def imitation_bank(money):
     
 
 imitation_bank(int(input("Введите сумму: ")))
+
+#Напишите скрипт, позволяющий определить надежность вводимого пользователем пароля. Это задание является творческим: алгоритм
+#определения надежности разработайте самостоятельно. --10
+
+def validation(password):
+    if len(password)>9 and not password.isdigit() and password.startswith('!'):
+        print("Пароль надёжный")
+    else:
+        print("Плохой пароль!")
+
+
+validation(input("Введите пароль: "))
