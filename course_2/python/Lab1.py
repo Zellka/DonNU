@@ -1,7 +1,6 @@
 import random
 import math
 import datetime
-import itertools
 
 #Напишите скрипт, который преобразует введенное с клавиатуры вещественное число в денежный формат. Например, число 12,5 должно
 #быть преобразовано к виду «12 руб. 50 коп.». В случае ввода отрицательного числа выдайте сообщение «Некорректный формат!»
@@ -198,7 +197,7 @@ plot_signal([i for i in range(15)])
 
 #Напишите скрипт, который на основе списка из 16 названий футбольных команд случайным образом формирует 4 группы по 4
 #команды, а также выводит на консоль календарь всех игр (игры должны проходить по средам, раз в 2 недели, начиная с 14 сентября
-#текущего года). Даты игр необходимо выводить в формате «14/09/2016, 22:45». Используйте модули random и itertools. --16
+#текущего года). Даты игр необходимо выводить в формате «14/09/2016, 22:45». --16
 
 def distribute_teams():
 
@@ -209,15 +208,15 @@ def distribute_teams():
                       ]
 
     random.shuffle(football_teams)
-    dates = datetime.datetime(2021, 9, 14, 22, 45)
-    
+    dates = datetime.datetime(2021, 9, 14, 13, 30)
     groups = [football_teams[i*4:i*4+4] for i in range(4)]
     print("Groups")
     [print(i) for i in groups]
-    
+
     print("\nGames")
-    [print(i, dates.strftime("%d/%m/%y %H:%M")) for i in football_teams]
-    dates += datetime.timedelta(days=14)
+    for i in football_teams:
+        print(i, dates.strftime("%d/%m/%Y %H:%M"))
+        dates += datetime.timedelta(days=14, hours=4)
 
 distribute_teams()
     
