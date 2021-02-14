@@ -8,4 +8,4 @@
 * [Computer graphics](https://github.com/IlonaZellka/DonNU/tree/main/course_2/computer_graphics)
 * [Assembler](https://github.com/IlonaZellka/DonNU/tree/main/course_2/assembler)
 * [Script Programming](https://github.com/Zellka/DonNU/tree/main/course_2/python)
-* Database
+* [Database](https://github.com/Zellka/DonNU/tree/main/course_2/database)
