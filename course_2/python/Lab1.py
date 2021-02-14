@@ -184,7 +184,7 @@ print(get_pages())
 def pre_process(a):
     def decorator(fn):
         def wrapped(list):
-            return  fn([round(i-a*(i-1),2) for i in list])
+             return  fn([round(list[i]-a*list[i-1],2) for i in range(len(list))])
         return wrapped
     return decorator
 
