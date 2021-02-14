@@ -184,11 +184,9 @@ def non_empty(fn):
         return list(filter(None, fn()))
     return wrapped
 
-
 @non_empty
 def get_pages():
     return ['chapter1', '', 'contents', '', 'line1']
-
 
 print(get_pages())
 
