@@ -1,0 +1,9 @@
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\bin\Debug\Laba_graphic_12.exe.config
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\bin\Debug\Laba_graphic_12.exe
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\bin\Debug\Laba_graphic_12.pdb
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.csprojAssemblyReference.cache
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.Form1.resources
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.Properties.Resources.resources
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.csproj.GenerateResource.cache
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.exe
+C:\Users\ACER\Documents\1 УНИВЕР\3 Комп_инж_графика\Laba_graphic_12\Laba_graphic_12\obj\Debug\Laba_graphic_12.pdb
