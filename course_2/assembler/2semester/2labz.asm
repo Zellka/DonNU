@@ -41,21 +41,24 @@ call print
 ret
 main endp
 
-; ************************
+; *********Считываем введённое число***************
 fun proc near
+; подсказка
 mov ah,09
 lea dx,mes
 int 21h
-
+; считываем с экрана число как строку
 mov ah,0ah
 lea dx,buf
 int 21h
-cmp buf+1,1
+; преобразуем строку в число
+cmp buf+1,1 ; сколько символов ввели?
 jne @w1
+;один символ ввели
 mov al,buf+2
 sub al,30h
-jmp @w2
-@w1: 
+jmp @w2 
+@w1: ; две цифры
 mov al,buf+2
 sub al,30h
 mov bl,10
@@ -65,6 +68,7 @@ sub bl,30h
 add al,bl
 @w2: 
 mov elem,al
+; перевод строки
 mov ah,09
 lea dx,ps
 int 21h
@@ -77,28 +81,32 @@ print proc near
 mov cl,sk
 mov bp,0
 @w3:
-mov al,SPISOK+bp 
+mov al,SPISOK+bp ; один элемент списка
 cbw ; al --> ax
 mov bl,10
 idiv bl
 mov des,al
 mov ed,ah
+; выводим десятки
 mov ah,02
 mov dl,des
 add dl,30h
 int 21h
+; выводим единицы
 mov ah,02
 mov dl,ed
 add dl,30h
 int 21h
+; выводим пробел
 mov ah,02
 mov dl,' '
 int 21h
-add bp,1 
+add bp,1 ; переход к следующему элементу
 loop @w3
 mov ah,09
 lea dx,ps
 int 21h
+; ожидание нажатия на клавишу
 mov ah,08
 int 21h
 ret
