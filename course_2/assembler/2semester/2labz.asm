@@ -1,7 +1,7 @@
 ADDED macro p
 local @w4,@m2,@m3
 
-mov al,p ;счётчик цикла
+mov al,p 
 mov spisok+25,al
 
 endm
