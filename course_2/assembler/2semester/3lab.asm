@@ -20,13 +20,13 @@ Ones db ?
 ;---------------------------------
 Q dw ?
 T dw ?
-N dw 6
+N dw 5
 K dw ?
 vvodX db 10,13,'Enter elem X',10,13,'$'
 vivX db 10,13,'Array X:',10,13,'$'
 vivZ db 10,13,'Array Z:',10,13,'$'
 X dw 11 DUP(?)
-Z dw 6 DUP(?)
+Z dw 3 DUP(?)
 ;---------------------------------
 main proc near
 ; *************** Заполнение массива X ***************
@@ -68,7 +68,7 @@ int 21h
 ; *************** Конец вывода массива X *****
 
 ; ********** Расчёт элементов массива Z
-mov cx,6 ; считаем 6 элементов массива Z
+mov cx,3 ; считаем 3 элемента массива Z
 mov k,1 ; просто значение K
 mov bp,0 ; индекс элемента в массиве Z
 @MY:
@@ -124,7 +124,7 @@ jmp @MY
 @FIN: mov ah,09
 lea dx,vivZ
 int 21h
-mov cx,6
+mov cx,3
 lea si,Z ; адрес первого элемента
 @ZVIVOD:
 push cx
@@ -265,5 +265,3 @@ mov dl,' '
 int 21h
 ret
 vivod endp
-nata ends
-end begin
