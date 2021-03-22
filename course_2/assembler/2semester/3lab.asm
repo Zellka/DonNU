@@ -1,4 +1,4 @@
-;Z = П {(( X[k]**2+k)/(k+1) + X[N+1-k]**2} N=5;k=1,2,3
+;Z[k] = (( X[k]**2+k)/(k+1)) + (X[N+1-k]**2) N=5;k=1,2,3
 
 nata segment 'code'
 assume cs:nata, ds:nata, ss:nata, es:nata
@@ -265,3 +265,5 @@ mov dl,' '
 int 21h
 ret
 vivod endp
+nata ends
+end begin
