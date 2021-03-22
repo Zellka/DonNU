@@ -74,35 +74,25 @@ mov bp,0 ; индекс элемента в массиве Z
 @MY:
 push cx
 ; ***** Считаем первое слагаемое ************
-; считаем адрес элемента K
+; считаем адрес элемента k
 mov ax,k
 sub ax,1 ; ax=k-1
 mov bx,2
 imul bx ; ax=(k-1)*2
 mov si,ax ; si=ax=(k-1)*2
-mov ax,word ptr [X+si] ; берем элемент X(K)
-mov bx,4
-imul bx ; ax=4*X(K)
-mov T,ax ; T=4*X(K)
-; считаем адрес элемента 2N-K
-mov ax,N
-mov bx,2
-imul bx ; ax=2*N
-sub ax,k ; ax=2*N-K
-sub ax,1 ; ax=(2*N-K)-1
-mov bx,2
-imul bx ; ax=((2*N-K)-1)*2
-mov si,ax ; si=ax=((2*N-K)-1)*2
-mov ax,word ptr [X+si] ; берем элемент X(2N-K)
-; делим 4*X(K) на X(2N-K)
+mov ax,word ptr [X+si] ; берем элемент X(k)
+;--------1 слагаемое
+imul ax ; X(k)**2
+add ax, k ;   X(k)**2 + k
+mov T,ax ; T = X(k)**2 + k
 
-mov bx,ax
-mov ax,T
-cwd ; ax->dx:ax
-idiv bx ; ax=4*X(K) / X(2N-K)
-mov T,ax ; T=4*X(K) / X(2N-K)
+mov bx,k
+add bx,1  ; k + 1
 
-; **** Считаем второе слагаемое
+mov ax, T
+idiv bx  ; (X(k)**2 + k) / (k + 1)
+mov T, ax ; T = (X(k)**2 + k) / (k + 1)
+;--------2 слагаемое
 ; высчитываем адрес элемента с номером N+1-k
 mov ax,N
 add ax,1
@@ -113,36 +103,17 @@ mov bx,2
 imul bx ; ax=смещение
 mov si,ax
 mov ax,word ptr [X+si] ; берем элемент X(N+1-K)
-imul ax ; ax=X(N+1-K)^2
-imul k ; ax=X(N+1-K)^2 * k
-imul k ; ax=X(N+1-K)^2 * k * k
-mov Q,ax ; Q=X(N+1-K)^2 * k * k
-; высчитываем адрес элемента X(K+1)
-mov ax,k
-add ax,1 ; ax=k+1
-sub ax,1
-mov bx,2
-imul bx ; ax=смещение
-mov si,ax
-mov ax,word ptr [X+si] ; ax = X(K+1)
-; высчитываем k+1
-mov bx,k
-add bx,1 ; bx = K+1
-; умножаем
-imul bx ; ax=(K+1)*X(K+1)
-; делим X(N+1-K)^2 * k * k на (K+1)*X(K+1)
-mov bx,ax
-mov ax,Q
-cwd ; ax->dx:ax
-idiv bx ; ax=X(N+1-K)^2 * k * k / (K+1)*X(K+1)
+imul ax; X(N+1-k)**2
+mov Q,ax
 ; складываем слагаемые
+mov ax,Q
 add ax,T
+
 ; заносим высчитанное в элемент массива Z
 mov Z+bp,ax
 ; наращиваем k на 1
 add k,1
 ; переходим к след.элементу массива Z
-
 add bp,2
 pop cx
 sub cx,1
