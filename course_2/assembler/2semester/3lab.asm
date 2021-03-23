@@ -25,7 +25,7 @@ K dw ?
 vvodX db 10,13,'Enter elem X',10,13,'$'
 vivX db 10,13,'Array X:',10,13,'$'
 vivZ db 10,13,'Array Z:',10,13,'$'
-X dw 11 DUP(?)
+X dw 5 DUP(?)
 Z dw 3 DUP(?)
 ;---------------------------------
 main proc near
