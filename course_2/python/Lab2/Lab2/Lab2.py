@@ -15,7 +15,7 @@ def count_letters():
     for value in sorted(dictionary.keys(), key=dictionary.get, reverse=True):
         print(value, " --- ", dictionary[value])
 
-#count_letters()
+count_letters()
 
 #2
 #Напишите скрипт, позволяющий искать в заданной директории и в ее подпапках файлы-дубликаты на основе сравнения контрольных сумм (MD5). 
@@ -34,7 +34,7 @@ def search_duplicate_files():
             if nums[i] == nums[j]:
                 print('Группа дубликатов:', files[i], files[j])
 
-#search_duplicate_files()
+search_duplicate_files()
 
 #3
 #Задан путь к директории с музыкальными файлами (в названии которых нет номеров, а только названия песен) и текстовый файл,
@@ -82,14 +82,14 @@ def search_type():
     for index, substr in get_substr(input_text, reg):
          print(output_text.format(index, substr))
 
-#search_type()
+search_type()
 
 
 #5
 #Введите с клавиатуры текст. Программно найдите в нем и выведите отдельно все слова, которые начинаются с большого латинского
 #символа (от A до Z) и заканчиваются 2 или 4 цифрами, например «Petr93», «Johnny70», «Service2002». Используйте регулярные выражения
 
-#input_text = input('Введите текст: ') #text = 'Petr93 Johnny70 Service2002 5P1234'
+input_text = input('Введите текст: ') #text = 'Petr93 Johnny70 Service2002 5P1234'
 
 def check_input(text, reg):
     for i in range(len(text)):
@@ -102,7 +102,7 @@ def check_input(text, reg):
             parser = re.search(reg,text[i])
 
 reg = "[A-ZА-ЯЁ][A-ZА-ЯЁa-zа-яё]+([0-9]{4}$|[0-9]{2}$)"
-#[print(output_text) for i, j, output_text in check_input(input_text.split(),reg)]
+[print(output_text) for i, j, output_text in check_input(input_text.split(),reg)]
 
 #6
 #Напишите скрипт reorganize.py, который в директории --source создает две директории: Archive и Small. В первую директорию помещаются
