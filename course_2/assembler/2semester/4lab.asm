@@ -1,3 +1,5 @@
+; Подпрограмма суммирования слов с нечетными значениями в чётных столбцах.
+
 nata segment 'code'
 assume cs:nata, ds:nata, ss:nata, es:nata
 org 100h
