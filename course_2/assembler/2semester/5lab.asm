@@ -1,13 +1,12 @@
-; --------------------------------------------------------
 yulya segment para 'code'
 assume cs:yulya, ds:yulya,es:yulya,ss:yulya
 org 100h
 begin: jmp main
 ;----------------------------------------------------------
 ; выделение и инициализация ячеек оперативной памяти
-s db 'Количество клавиш мыши = $'
+s db 'Number of mouse keys = $'
 nr db ?
-s0 db 13,10,'Установлен следующий тип мыши:',13,10,'$'
+s0 db 13,10,'The following mouse type is installed:',13,10,'$'
 s1 db '1 - Bus Mouse',13,10,'$'
 s2 db '2 - Serial Mouse',13,10,'$'
 s3 db '3 - Inport Mouse',13,10,'$'
@@ -19,9 +18,9 @@ X db ?
 Y db ?
 MN db 8
 s_k db 5 DUP(?)
+ 
 ; ---------------------------------------------------------
 main proc near
-; ******** код лабораторной работы **********************
 ; получение текущего видеорежима
 mov ah,0fh
 int 10h
@@ -90,76 +89,19 @@ int 10h
 ; включить курсор мыши
 mov ax,0001
 int 33h
-looping:
-; получить координаты курсора мыши
 
-mov ax,0003
+;изменяем форму мыши
+mov ax, 000Ah
 int 33h
-test bx,00000001b
-jne @go_out
-mov X1,cx
-mov Y1,dx
-; Делим на 8
-mov ax,X1
-idiv mn
-mov X,al
-mov ax,Y1
-idiv mn
-mov Y,al
-call form_str
-call viv_coord
-jmp looping
-;*******************************************************
-@go_out:
-; восстановление текстового режима
-mov ah,0
-mov al,nr
-int 10h
+mov bx, 1110
+mov cx, 0
+mov dx, 01418h
+
+mov ah,08 ;ожидание нажатия клавиши
+int 21h
+
 ; ******************************************************
 ret ; возврат в операционную систему
 main endp
-;********************************************
-viv_coord proc near
-push cs
-pop es
-mov ah,13h
-lea bp,s_k
-mov cx,5
-mov dh,0
-mov dl,0
-mov al,0
-mov bl,1Eh
-int 10h
-ret
-viv_coord endp
-; Формирование строки для вывода
-form_str proc near
-mov al,X
-cbw
-mov bl,10
-idiv bl
-add al,30h ; десятки в виде символа
-add ah,30h ; единицы в виде символа
-
-mov bp,0
-mov [s_k+bp],al
-add bp,1
-mov [s_k+bp],ah
-; пробел
-add bp,1
-mov [s_k+bp],' '
-; для Y
-mov al,Y
-cbw
-mov bl,10
-idiv bl
-add al,30h ; десятки в виде символа
-add ah,30h ; единицы в виде символа
-add bp,1
-mov [s_k+bp],al
-add bp,1
-mov [s_k+bp],ah
-ret
-form_str endp
 yulya ends
 end begin
