@@ -76,7 +76,7 @@ def get_substr(text, reg):
 
 
 def search_type():
-    reg = r'int|short|byte \w+ = \d+'
+    reg = r'(int|short|byte) \w+ = \d+'
     output_text = 'Строка №{0} : {1}'
     input_text = get_data(input('Введите название файла: '))
     for index, substr in get_substr(input_text, reg):
