@@ -1,6 +1,7 @@
 from Fraction import*
 from Book import*
 from Library import*
+from Task3 import*
 from StringFormatter import*
 from Task5 import*
 import wx
@@ -28,6 +29,15 @@ def task2():
         print(book.tag())
 
 task2()
+
+def task3():
+
+    app = wx.App()
+    frame = Task3()
+    frame.Show()
+    app.MainLoop()
+
+task3()
 
 def task4():
 
