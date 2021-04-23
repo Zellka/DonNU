@@ -4,31 +4,31 @@ import wx
 class Task5(wx.Frame):
 
     def __init__(self):
-        wx.Frame.__init__(self, None, -1, "StringFormatter", size = (400, 300))
+        wx.Frame.__init__(self, None, -1, 'StringFormatter', size = (400, 300))
         pn = wx.Panel(self, -1)
 
-        wx.StaticText(pn, -1, "Строка:", pos = (5, 22))
-        self._input_text = wx.TextCtrl(pn, -1, "", size = (300, -1), pos = (70, 20))
-        wx.StaticText(pn, -1, "Результат:", pos = (5, 232))
-        self._result_text = wx.TextCtrl(pn, -1, "", size = (300, -1), pos = (70, 230))
+        wx.StaticText(pn, -1, 'Строка:', pos = (5, 22))
+        self._input_text = wx.TextCtrl(pn, -1, '', size = (300, -1), pos = (70, 20))
+        wx.StaticText(pn, -1, 'Результат:', pos = (5, 232))
+        self._result_text = wx.TextCtrl(pn, -1, '', size = (300, -1), pos = (70, 230))
 
-        self._delete_check = wx.CheckBox(pn, -1, "Удалить слова размером меньше", (70, 60), (210, 20))
+        self._delete_check = wx.CheckBox(pn, -1, 'Удалить слова размером меньше', (70, 60), (210, 20))
         self._spin = wx.SpinCtrl(pn, -1, "", (285, 60), (40, 20))
         self._spin.SetRange(1, 10)
         self._spin.SetValue(5)
         wx.StaticText(pn, -1, "букв", pos=(330, 62))
 
-        self._replace_check = wx.CheckBox(pn, -1,"Заменить все цифры на *", (70, 80), (220, 20))
-        self._insert_check = wx.CheckBox(pn, -1,"Вставить по пробелу между символами", (70, 100), (280, 20))
+        self._replace_check = wx.CheckBox(pn, -1,'Заменить все цифры на *', (70, 80), (220, 20))
+        self._insert_check = wx.CheckBox(pn, -1,'Вставить по пробелу между символами', (70, 100), (280, 20))
 
-        self._sort_check = wx.CheckBox(pn, -1, "Сортировать слова в строке", (70, 120), (220, 20))
-        self.radio_by_size = wx.RadioButton(pn, -1, "По размеру", (100, 140), (150, 20))
-        self.radio_by_alp = wx.RadioButton(pn, -1, "Лексикографически", (100, 160), (150, 20))
+        self._sort_check = wx.CheckBox(pn, -1, 'Сортировать слова в строке', (70, 120), (220, 20))
+        self.radio_by_size = wx.RadioButton(pn, -1, 'По размеру', (100, 140), (150, 20))
+        self.radio_by_alp = wx.RadioButton(pn, -1, 'Лексикографически', (100, 160), (150, 20))
         self.radio_by_size.SetValue(True)
         self.radio_by_size.Disable()
         self.radio_by_alp.Disable()
 
-        format_btn = wx.Button(pn, -1, "Форматировать",size = (300, 30), pos = (70, 190))
+        format_btn = wx.Button(pn, -1, 'Форматировать', size = (300, 30), pos = (70, 190))
         self.Bind(wx.EVT_BUTTON, self.on_format_click, format_btn)
         self.Bind(wx.EVT_CHECKBOX, self.sort_check, self._sort_check)
 
@@ -61,6 +61,3 @@ class Task5(wx.Frame):
             result = StringFormatter.insert_space(result)
 
         self._result_text.Value = result
-
-
-
