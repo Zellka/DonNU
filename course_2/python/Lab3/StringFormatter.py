@@ -1,21 +1,23 @@
 class StringFormatter(object):
 
-    def __init__(self, text):
-        self._text = text
+    @staticmethod
+    def del_word(text, n):
+        return ' '.join([word for word in text.split(' ') if len(word) > n])
 
-    def del_word(self, n):
-        return ' '.join([word for word in self._text.split(' ') if len(word) > n])
+    @staticmethod
+    def replace_digit(text):
+        return text.translate(text.maketrans("123456789","*********"))
 
-    def replace_digit(self):
-        return self._text.translate(self._text.maketrans("123456789","*********"))
+    @staticmethod
+    def insert_space(text):
+        return ' '.join([i for i in ' '.join(text)])
 
-    def insert_space(self):
-        return ' '.join([i for i in ' '.join(self._text)])
+    @staticmethod
+    def sort_size(text):
+        return ' '.join(sorted(text.split(), key = lambda word: len(word)))
 
-    def sort_size(self):
-        return ' '.join(sorted(self._text.split(), key = lambda word: len(word)))
-
-    def sort_alphabet(self):
-        return ' '.join(sorted(self._text.split()))
+    @staticmethod
+    def sort_alphabet(text):
+        return ' '.join(sorted(text.split()))
 
 
