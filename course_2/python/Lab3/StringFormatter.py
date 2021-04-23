@@ -1,5 +1,3 @@
-
-
 class StringFormatter(object):
 
     def __init__(self, text):
@@ -12,7 +10,7 @@ class StringFormatter(object):
         return self._text.translate(self._text.maketrans("123456789","*********"))
 
     def insert_space(self):
-        return '  '.join([word for word in self._text.split(' ')])
+        return ' '.join([i for i in ' '.join(self._text)])
 
     def sort_size(self):
         return ' '.join(sorted(self._text.split(), key = lambda word: len(word)))
