@@ -2,6 +2,8 @@ from Fraction import*
 from Book import*
 from Library import*
 from StringFormatter import*
+from Task5 import*
+import wx
 
 def task1():
     frac = Fraction (7, 2)
@@ -31,12 +33,21 @@ def task4():
 
     text = 'Tim1 Pike 19Svetlana23 Leo David56 Charles Jk Cho Lera'
 
-    format = StringFormatter(text);
+    format = StringFormatter();
     print(text)
-    print(format.del_word(5))
-    print(format.replace_digit())
-    print(format.insert_space())
-    print(format.sort_size())
-    print(format.sort_alphabet())
+    print(format.del_word(text, 5))
+    print(format.replace_digit(text))
+    print(format.insert_space(text))
+    print(format.sort_size(text))
+    print(format.sort_alphabet(text))
 
 task4()
+
+def task5():
+
+    app = wx.App()
+    frame = Task5()
+    frame.Show()
+    app.MainLoop()
+
+task5()
