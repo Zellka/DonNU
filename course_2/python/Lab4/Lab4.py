@@ -1,6 +1,9 @@
 from Task1 import *
 from Task6 import *
-from Task8 import *
+import csv
+import pandas as pd
+from pandas import read_csv
+
 
 #Напишите скрипт, читающий во всех mp3-файлах указанной директории ID3v1-теги и выводящий информацию о каждом файле в
 #виде: [имя исполнителя] - [название трека] - [название альбома]. Если пользователь при вызове скрипта задает ключ -d, то выведите
@@ -42,8 +45,56 @@ task6()
 #Сгруппируйте страны по первой букве; по населению; по территории.
 #Программно сохраните в таблицу Excel все страны с выборочной информацией: название, столица, население, территория, валюта, широта, долгота.
 
-def task8():
+file_countries = 'countries.csv'
 
-    show_data_countries()
+def save_table(table):
+        titles = pd.Series([i.split(',')[0] for i in table.name])
+        titles.name = 'name'
+        lat, lng = zip(*[i.split(',')
+                         if isinstance(i, str)
+                         else ['nan', 'nan']
+                         for i in table.latlng])
+        lat, lng = map(pd.Series, (lat, lng))
+        lat.name = 'latitude'
+        lng.name = 'longitude'
+        output_data = pd.concat([titles, table[['capital', 'ccn3', 'area', 'currencies']], lat, lng], axis=1)
+        with pd.ExcelWriter('newdata.xls') as file:
+            output_data.to_excel(file)
+
+def task8():
+    table = read_csv(file_countries, ',')
+    print('\n1) 10 самых самых больших стран мира по территории:\n')
+    print(table.nlargest(10, columns='area')[['name']])
+    print('\n1) 10 самых маленьких стран мира по территории:\n')
+    print(table.nsmallest(10, ['area'])[['name']])
+    print('\n2) 10 самых больших стран мира по населению:\n')
+    print(table.nlargest(10, ['ccn3'])[['name']])
+    print('\n2) 10 самых маленьких стран мира по населению:\n')
+    print(table.nsmallest(10, ['ccn3'])[['name']])
+    print('\n3) все франкоязычные страны мира:\n')
+    print(table[table.languages == 'French'][['name']])
+    print('\n4) только островные государства:\n')
+    print(table[table.borders.isnull()][['name']])
+    print('\n5) все страны, находящиеся в южном полушарии:\n')
+    print(table.where(pd.Series([float(str(i).split(',')[0]) < 0 for i in table.latlng])).name.dropna())
+
+    print('\nГруппировка стран по первой букве:\n')
+    for i, group in table.groupby([i[0] for i in table.name]):
+       print(str(i) + ' : ')
+       for j, name in enumerate(group.name, 1):
+           print(name.split(',')[0])
+    print('\nГруппировка стран по населению:\n')
+    for i, group in table.groupby(table.ccn3):
+       print(str(i) + ' : ', end='')
+       for j, name in enumerate(group.name, 1):
+           print(name.split(',')[0])
+    print('\nГруппировка стран по территории:\n')
+    for i, group in table.groupby(table.area):
+       print(str(i) + ' : ', end='')
+       for j, name in enumerate(group.name, 1):
+           print(name.split(',')[0])
+
+    save_table(table=table)
+    
 
 task8()
