@@ -1,9 +1,12 @@
 from Task1 import *
+from Task3 import *
 from Task6 import *
 import csv
 import pandas as pd
 from pandas import read_csv
 from sympy import *
+import sqlalchemy
+from sqlalchemy.orm import sessionmaker
 
 
 #Напишите скрипт, читающий во всех mp3-файлах указанной директории ID3v1-теги и выводящий информацию о каждом файле в
@@ -16,6 +19,27 @@ def task1():
     Task1().decoding()
 
 task1()
+
+#Выполните задание средствами SQLAlchemy, включая создание и редактирование таблиц, а также выполнение таких запросов, как:
+#- вывод фамилий всех авторов, родившихся в диапазоне между X и Y годами (задайте программно числа X и Y);
+#- вывод всех книг, написанных авторами из России;
+#- вывод всех книг с количеством страниц более N;
+#- вывод всех авторов с числом книг более N.
+
+def task3():
+
+    engine = sqlalchemy.create_engine('sqlite:///Library.db', echo=False)
+    Session = sessionmaker(bind=engine)
+    sessia = Session()
+
+    print_range(sessia)
+    print_russians(sessia)
+    print_pages(sessia)
+    print_authors(sessia)
+
+    sessia.close()
+
+task3()
 
 #С помощью модуля numPy реализуйте следующие операции: 
 #1) умножение произвольных матриц А (размерности 3х5) и В (5х2); 
