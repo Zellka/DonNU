@@ -20,7 +20,7 @@ class Task1(object):
             with open(path +'\\' + file, 'rb') as file:
                 file.seek(-128, 2)
                 track = MusicTrack()
-                track.header, track.title, track.artist, track.album, track.year, track.comment, track.genre = struct.unpack("!3s30s30s30s4s30sb", file.read())
+                track.header, track.title, track.artist, track.album, track.year, track.comment, track.genre = struct.unpack("!!!!3s30s30s30s4s30!sb", file.read())
                 self.list_music.append(track)
                 del track
         print('\tНазвание  -  Исполнитель  -  Альбом\n')
