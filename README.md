@@ -9,3 +9,4 @@
 * [Assembler](https://github.com/IlonaZellka/DonNU/tree/main/course_2/assembler)
 * [Script Programming](https://github.com/Zellka/DonNU/tree/main/course_2/python)
 * [Database](https://github.com/Zellka/DonNU/tree/main/course_2/database)
+### 3 course
