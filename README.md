@@ -12,3 +12,4 @@
 * [Database](https://github.com/Zellka/DonNU/tree/main/course_2/database)
 ### 3 course
 * [Database](https://github.com/Zellka/DonNU/tree/main/course_3/database)
+* [Computational Mathematics](https://github.com/Zellka/DonNU/tree/main/course_3/computational_math)
