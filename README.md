@@ -13,3 +13,4 @@
 ### 3 course
 * [Database](https://github.com/Zellka/DonNU/tree/main/course_3/database)
 * [Computational Mathematics](https://github.com/Zellka/DonNU/tree/main/course_3/computational_math)
+* [Operating systems](https://github.com/Zellka/DonNU/tree/main/course_3/os)
