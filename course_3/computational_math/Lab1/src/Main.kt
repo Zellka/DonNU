@@ -22,6 +22,13 @@ fun getMachineZero(e: Double): Double {
     return machineZero
 }
 
+fun getMachineZero(e: Float): Float {
+    var machineZero = e
+    while (machineZero / 2 > 0)
+        machineZero /= 2
+    return machineZero
+}
+
 fun getMachineInfinity(inf: Double, value: Double): Double {
     var infinity = inf
     var tmp = value
@@ -44,13 +51,6 @@ fun getMachineInfinity(inf: Float, value: Float): Float {
         infinity = tmp
     }
     return infinity
-}
-
-fun getMachineZero(e: Float): Float {
-    var machineZero = e
-    while (machineZero / 2 > 0)
-        machineZero /= 2
-    return machineZero
 }
 
 fun getFirstEx(x: Double): Double {
