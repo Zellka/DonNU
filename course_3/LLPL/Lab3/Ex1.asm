@@ -10,16 +10,30 @@ wsprintfA PROTO C :VARARG
 	format db 'Ответ = %d', 0 ; задаем исходные данные
 	a dd -5
 	b dd 0
-	k dd 6
-	d dd ?
+	z1 dd ?
+	z2 dd ?
+	z3 dd ?
+	y dd ?
 .code
 program:
-	push k ; кладём параметры в стек
-	push b
-	push a
+	mov eax, a
+	add eax, b
+	mov z1, eax
+	mov eax, a
+	sub eax, b
+	mov z2, eax
+	mov eax, a
+	add eax, b
+	mov ebx, -1
+    imul ebx
+	mov z3, eax
+
+	push z3 ; кладём параметры в стек
+	push z2
+	push z1
 	call Procedure
 	add esp, 12 ; освобождаем 12 байт стека
-	mov d, eax 
+	mov y, eax 
 	push 0
 	invoke wsprintfA, addr buffer, addr format, eax ; формируем строку вывода по заданному формату
 	invoke MessageBoxA, 0, ADDR buffer, ADDR TitleMsg,0 ; выводим результат в диалоговое окно
