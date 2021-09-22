@@ -37,7 +37,6 @@ program:
 	push 0
 	invoke wsprintfA, addr buffer, addr format, eax ; формируем строку вывода по заданному формату
 	invoke MessageBoxA, 0, ADDR buffer, ADDR TitleMsg,0 ; выводим результат в диалоговое окно
-	invoke ExitProcess,0
 	call ExitProcess
 
 Procedure proc
