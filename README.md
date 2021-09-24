@@ -15,3 +15,4 @@
 * [Computational Mathematics](https://github.com/Zellka/DonNU/tree/main/course_3/computational_math)
 * [Operating systems](https://github.com/Zellka/DonNU/tree/main/course_3/os)
 * [Low-level programming languages](https://github.com/Zellka/DonNU/tree/main/course_3/LLPL)
+* [Web programming](https://github.com/Zellka/DonNU/tree/main/course_3/web_programming)
