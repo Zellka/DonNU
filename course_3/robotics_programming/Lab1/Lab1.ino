@@ -2,16 +2,16 @@ const int GREEN = 11;
 const int YELLOW = 12;
 const int RED = 13;   
 
-const int TIMEPICK = 4000;//период свечения светодиода.
+const int TIMEPICK = 4000; //РїРµСЂРёРѕРґ СЃРІРµС‡РµРЅРёСЏ СЃРІРµС‚РѕРґРёРѕРґР°.
 
 void setup()
 {
-	//переводим все порты в состояние вывода информации
+	//РїРµСЂРµРІРѕРґРёРј РІСЃРµ РїРѕСЂС‚С‹ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ РІС‹РІРѕРґР° РёРЅС„РѕСЂРјР°С†РёРё
 	pinMode(GREEN, OUTPUT);
 	pinMode(YELLOW, OUTPUT);
 	pinMode(RED, OUTPUT); 
 
-	//устанавливаем начальное значение светодиодов
+	//СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃРІРµС‚РѕРґРёРѕРґРѕРІ
 	digitalWrite(GREEN, LOW);
 	digitalWrite(YELLOW, LOW);
 	digitalWrite(RED, LOW);
@@ -19,15 +19,14 @@ void setup()
 
 void loop()
 {
-	digitalWrite(GREEN, HIGH); //включается зелёный      
+	digitalWrite(GREEN, HIGH); //РІРєР»СЋС‡Р°РµС‚СЃСЏ Р·РµР»С‘РЅС‹Р№            
 	delay(TIMEPICK);            
 
-	digitalWrite(GREEN, LOW); //выключается зелёный
-	digitalWrite(YELLOW, HIGH); //включается жёлтый          
+	digitalWrite(GREEN, LOW); //РІС‹РєР»СЋС‡Р°РµС‚СЃСЏ Р·РµР»С‘РЅС‹Р№
+	digitalWrite(YELLOW, HIGH); //РІРєР»СЋС‡Р°РµС‚СЃСЏ Р¶С‘Р»С‚С‹Р№        
 	delay(TIMEPICK);            
 
-	digitalWrite(YELLOW, LOW); //выключается жёлтый
-	digitalWrite(RED, HIGH); //включается красный          
+	digitalWrite(YELLOW, LOW); //РІС‹РєР»СЋС‡Р°РµС‚СЃСЏ Р¶С‘Р»С‚С‹Р№
+	digitalWrite(RED, HIGH); //РІРєР»СЋС‡Р°РµС‚СЃСЏ РєСЂР°СЃРЅС‹Р№    
 	delay(TIMEPICK);                           
-	digitalWrite(RED, LOW); //выключается красный
-}
+	digitalWrite(RED, LOW); //РІС‹РєР»СЋС‡Р°РµС‚СЃСЏ РєСЂР°СЃРЅС‹Р№
