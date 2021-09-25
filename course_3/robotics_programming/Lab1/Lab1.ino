@@ -30,3 +30,4 @@ void loop()
 	digitalWrite(RED, HIGH); //включается красный    
 	delay(TIMEPICK);                           
 	digitalWrite(RED, LOW); //выключается красный
+}
