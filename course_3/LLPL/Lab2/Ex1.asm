@@ -5,9 +5,10 @@ ExitProcess PROTO STDCALL :DWORD
 MessageBoxA PROTO STDCALL :DWORD,:DWORD,:DWORD,:DWORD
 wsprintfA PROTO C :VARARG
 .data
-	TitleMsg db '1 задание',0 ; указываем буфер для форматированного вывода
-	buffer db 128 dup(0) ; указываем строку формата со спецификациями форматов
-	format db '(%d * %d) + ((%d - %d) / %d) + %d = %d', 0 ; задаем исходные данные
+	TitleMsg db '1 задание',0 
+	buffer db 128 dup(0); указываем буфер для форматированного вывода
+	format db '(%d * %d) + ((%d - %d) / %d) + %d = %d', 0  ; указываем строку формата со спецификациями форматов
+	; задаем исходные данные
 	mem1 dd 3
 	mem2 dd 5
 	mem3 dd 1982
