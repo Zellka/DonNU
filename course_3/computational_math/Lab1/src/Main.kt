@@ -77,6 +77,13 @@ fun getFirstEx(x: Double): Double {
     return 2 / sqrt(kotlin.math.PI) * sum
 }
 
+fun getFactorial(n: Int): Int {
+    var factorial = 1
+    if (n == 0) return 1
+    for (i in 1..n) factorial *= i
+    return factorial
+}
+
 fun getThirdEx(x: Double): Double {
     var sum = 0.0
     var n = 0.0
@@ -98,13 +105,6 @@ fun getThirdEx(x: Double): Double {
         n++
     }
     return 2 / sqrt(kotlin.math.PI) * sum
-}
-
-fun getFactorial(n: Int): Int {
-    var factorial = 1
-    if (n == 0) return 1
-    for (i in 1..n) factorial *= i
-    return factorial
 }
 
 fun getFactorial(n: Double): Double {
@@ -147,5 +147,3 @@ fun getFourthEx(x: Double): Double {
 fun getCoefficient(x: Double, n: Int): Double {
     return -1 * x.pow(2) * (2 * n - 1) / (n * (2 * n + 1))
 }
-
-
