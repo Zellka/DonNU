@@ -1,5 +1,6 @@
 import kotlin.math.pow
 import kotlin.math.sqrt
+import kotlin.math.abs
 
 fun main(args: Array<String>) {
     println("1 задание")
@@ -16,13 +17,6 @@ fun main(args: Array<String>) {
 }
 
 fun getMachineZero(e: Double): Double {
-    var machineZero = e
-    while (machineZero / 2 > 0)
-        machineZero /= 2
-    return machineZero
-}
-
-fun getMachineZero(e: Float): Float {
     var machineZero = e
     while (machineZero / 2 > 0)
         machineZero /= 2
@@ -53,13 +47,54 @@ fun getMachineInfinity(inf: Float, value: Float): Float {
     return infinity
 }
 
+fun getMachineZero(e: Float): Float {
+    var machineZero = e
+    while (machineZero / 2 > 0)
+        machineZero /= 2
+    return machineZero
+}
+
 fun getFirstEx(x: Double): Double {
     var sum = 0.0
     var n = 0
+    var max = 0.0
     while (true) {
         val term = (-1.0).pow(n) * x.pow(2 * n + 1) / getFactorial(n) * (2 * n + 1)
-        if (term.isInfinite()) break
-        sum += term
+
+        if (n == 0) max = abs(term)
+        else {
+            if (abs(term) > term) {
+                max = term;
+            }
+        }
+
+        if (term.isInfinite()) {
+            println("Максимальный элемент суммы (по модулю): " + abs(max))
+            break
+        } else sum += term
+        n++
+    }
+    return 2 / sqrt(kotlin.math.PI) * sum
+}
+
+fun getThirdEx(x: Double): Double {
+    var sum = 0.0
+    var n = 0.0
+    var max = 0.0
+    while (true) {
+        val term = (-1.0).pow(n) * x.pow(2 * n + 1) / getFactorial(n) * (2 * n + 1)
+
+        if (n.toInt() == 0) max = abs(term)
+        else {
+            if (abs(term) > term) {
+                max = term;
+            }
+        }
+
+        if (term.isInfinite()) {
+            println("Максимальный элемент суммы (по модулю): " + abs(max))
+            break
+        } else sum += term
         n++
     }
     return 2 / sqrt(kotlin.math.PI) * sum
@@ -70,18 +105,6 @@ fun getFactorial(n: Int): Int {
     if (n == 0) return 1
     for (i in 1..n) factorial *= i
     return factorial
-}
-
-fun getThirdEx(x: Double): Double {
-    var sum = 0.0
-    var n = 0.0
-    while (true) {
-        val term = (-1.0).pow(n) * x.pow(2 * n + 1) / getFactorial(n) * (2 * n + 1)
-        if (term.isInfinite()) break
-        sum += term
-        n++
-    }
-    return 2 / sqrt(kotlin.math.PI) * sum
 }
 
 fun getFactorial(n: Double): Double {
@@ -99,13 +122,23 @@ fun getFactorial(n: Double): Double {
 fun getFourthEx(x: Double): Double {
     var sum = 0.0
     var n = 1
+    var max = 0.0
     var previousTerm = x * -1
     while (true) {
         val k = getCoefficient(x, n)
         val term = k * previousTerm
-        if (term == 0.0) break
-        previousTerm = term
-        sum += term
+        if (n == 0) max = abs(term)
+        else {
+            if (abs(term) > term) max = term
+        }
+        if (term == 0.0 || term.isInfinite())
+        {
+            println("Максимальный элемент суммы (по модулю): " + abs(max))
+            break;
+        } else {
+            sum += term
+            previousTerm = term
+        }
         n++
     }
     return 2 / sqrt(kotlin.math.PI) * sum
