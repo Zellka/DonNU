@@ -1,5 +1,6 @@
 .686
-.model flat, c
+.model flat, stdcall, c
+
 option casemap: none
 ExitProcess PROTO STDCALL :DWORD
 MessageBoxA PROTO STDCALL :DWORD,:DWORD,:DWORD,:DWORD
@@ -40,7 +41,6 @@ program:
 	push z2
 	push z1
 	call Procedure1
-	add esp, 12 ; освобождаем 12 байт стека
 	mov y, eax 
 	push 0
 
@@ -61,7 +61,7 @@ program:
 	call ExitProcess
 
 
-Procedure1 proc
+Procedure1 proc ;соглашения о вызовах stdcall
 	mov eax, [esp + 4] ; заносим в EAX первый параметр
 	mov edx, [esp + 8] ; заносим в EDX второй параметр
 	mov ebx, [esp + 12] ; заносим в EBX третий параметр
@@ -89,11 +89,11 @@ Procedure1 proc
 		jmp konec
 
 	konec:
-	ret
+	ret 12 ;указываем, что надо освободить 12 байт стека
 
 Procedure1 endp
 
-Procedure2 proc
+Procedure2 proc ;соглашения о вызовах cdecl
 	mov eax, [esp + 4] ; заносим в EAX первый параметр
 	mov edx, [esp + 8] ; заносим в EDX адрес результата
 
