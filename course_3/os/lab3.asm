@@ -1,6 +1,7 @@
 Assume CS: Code, DS: Code
 Code SEGMENT
-			org 100h
+org 100h
+
 D 		equ 	523 	;До
 Dsharp 		equ 	554 	;До#
 R 		equ 	587	;Ре
@@ -14,20 +15,20 @@ L 		equ 	880	;Ля
 Lsharp 		equ 	932	;Ля#
 C 		equ 	988	;Си
 
-number_cycles 	equ 	100 ;число переключений динамика
-port_b 		equ 	61h ;адрес системного порта В
+number_cycles 	equ 	100 	;число переключений динамика
+port_b 		equ 	61h 	;адрес системного порта В
 
 .286
 Start proc near
 	mov 	ax,cs
-	mov 	ds,ax ; DS = CS
+	mov 	ds,ax 		; DS = CS
 
 ; Обработка клавиш
 
 beg1: 	call kbin 		; Опрос клавиатуры
-	cmp al,'z' 			; = z ?
-	jnz beg2 			;нет
-	call ton1			;звук ноты C
+	cmp al,'z' 		; = z ?
+	jnz beg2 		;нет
+	call ton1		;звук ноты C
 	jmp beg1 		;переход на начало цикла
 beg2:	
 	cmp al,'s'				
@@ -85,15 +86,15 @@ beg12:
 	call ton12 				
 	jmp beg1 				
 
-begend: cmp al,'q' 				; = 'q' ?
-	jnz beg1 				;нет
-	int 20h 				;выход из программы 
+begend: cmp al,'q' 			; = 'q' ?
+	jnz beg1 			;нет
+	int 20h 			;выход из программы 
 start endp		
 
 ; Воспроизведение звука
 
 ton12 proc near				
-	mov dx,number_cycles	;длительность
+	mov dx,number_cycles		;длительность
 	mov di, C			;Си
 	jmp ton0			;переход на универсальную процедуру генерации звука
 ton11 proc near				
@@ -144,22 +145,22 @@ ton1 proc near
 ; DX – количество циклов, DI – задержка
 
 ton0 proc near
-	cli 			;запрет прерываний
-	in al,port_b 		;получаем статус порта
+	cli 				;запрет прерываний
+	in al,port_b 			;получаем статус порта
 	and al,11111110b 		;отключаем динамик от таймера
 
 ton01:	or al,00000010b 		;включаем динамик
 	out port_b,al 		
-	mov cx,di 		;счётчик цикла задержки
-	loop $ 			;задержка
+	mov cx,di 			;счётчик цикла задержки
+	loop $ 				;задержка
 ; Выключение звука
 	and al,11111101b 		;выключение динамика
-	out port_b,al 		;запись в системный порт В
-	mov cx,di 		;счётчик цикла задержки
-	loop $ 			;задержка
-	dec dx 			;декремент счетчика колич. циклов
-	jnz ton01 		;переход на начало нового периода
-	sti 			;разрешение прерываний
+	out port_b,al 			;запись в системный порт В
+	mov cx,di 			;счётчик цикла задержки
+	loop $ 				;задержка
+	dec dx 				;декремент счетчика колич. циклов
+	jnz ton01 			;переход на начало нового периода
+	sti 				;разрешение прерываний
 	ret 					
 
 ton0 endp 
@@ -177,7 +178,7 @@ ton10 endp
 ton11 endp					
 ton12 endp					
 
-kbin proc near 			 ;ожидание нажатие клавиши
+kbin proc near 				;ожидание нажатие клавиши
 	mov ah,0 			
 	int 16h 				
 	ret 					
