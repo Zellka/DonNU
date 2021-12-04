@@ -1,0 +1,10 @@
+﻿  Ex.cpp
+C:\Users\ACER\Documents\2 UNIVERSITA\6 Matematica Computazionale\Lab3\Lab3\Ex.cpp(21,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ACER\Documents\2 UNIVERSITA\6 Matematica Computazionale\Lab3\Lab3\Ex.cpp(73,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\ACER\Documents\2 UNIVERSITA\6 Matematica Computazionale\Lab3\Lab3\Ex.cpp(77,12): warning C4244: инициализация: преобразование "_Ty" в "int", возможна потеря данных
+          with
+          [
+              _Ty=double
+          ]
+C:\Users\ACER\Documents\2 UNIVERSITA\6 Matematica Computazionale\Lab3\Lab3\Ex.cpp(98,25): warning C4018: <: несоответствие типов со знаком и без знака
+  Lab3.vcxproj -> C:\Users\ACER\Documents\2 UNIVERSITA\6 Matematica Computazionale\Lab3\Debug\Lab3.exe
