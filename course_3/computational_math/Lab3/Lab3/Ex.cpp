@@ -5,12 +5,12 @@
 #include <fstream>
 
 using namespace std;
-using namespace Eigen; //для работы с матрицами
+using namespace Eigen; //РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РјР°С‚СЂРёС†Р°РјРё
 
 int main() {
 	const double min = 0;
 	const double max = 7;
-	//узлы данных
+	//СѓР·Р»С‹ РґР°РЅРЅС‹С…
 	double x[] = { 1, 2, 3, 4, 5, 6, 7, 8 };
 	double y[] = { 0.7, 2.4, 2.2, 3.6, 4.3, 6.1, 7.9, 9.3 };
 	int size = sizeof(x) / sizeof(double);
@@ -19,14 +19,14 @@ int main() {
 	double step = 0.1;
 	double value = x[0];
 	int num = (max - min) / step;
-	//добавление промежуточных значений в массиве х
+	//РґРѕР±Р°РІР»РµРЅРёРµ РїСЂРѕРјРµР¶СѓС‚РѕС‡РЅС‹С… Р·РЅР°С‡РµРЅРёР№ РІ РјР°СЃСЃРёРІРµ С…
 	for (double i = 0; i <= num; i++) {
 		xx.push_back(value);
 		value = value + step;
 	}
 	int size_xx = xx.size();
 
-	//массивы шагов
+	//РјР°СЃСЃРёРІС‹ С€Р°РіРѕРІ
 	vector<double> dx;
 	vector<double> dy;
 	for (int i = 0; i < size - 1; i++) {
@@ -51,7 +51,7 @@ int main() {
 		M(i) = 0;
 	}
 
-	//узел данных в указанном 1 конечном условии в матричном уравнение
+	//СѓР·РµР» РґР°РЅРЅС‹С… РІ СѓРєР°Р·Р°РЅРЅРѕРј 1 РєРѕРЅРµС‡РЅРѕРј СѓСЃР»РѕРІРёРё РІ РјР°С‚СЂРёС‡РЅРѕРј СѓСЂР°РІРЅРµРЅРёРµ
 	H(0, 0) = 1;
 	H(size - 1, size - 1) = 1;
 	for (int i = 1; i < size - 1; i++) {
@@ -60,11 +60,9 @@ int main() {
 		H(i, i + 1) = dx[i];
 		Y(i) = 3 * (dy[i] / dx[i] - dy[i - 1] / dx[i - 1]);
 	}
-
-	//решение матричного уравнения и получение второго дифференциального значения
 	M = H.colPivHouseholderQr().solve(Y);
 
-	//рассчёт коэффициентов сплайновой кривой
+	//СЂР°СЃСЃС‡С‘С‚ РєРѕСЌС„С„РёС†РёРµРЅС‚РѕРІ СЃРїР»Р°Р№РЅРѕРІРѕР№ РєСЂРёРІРѕР№
 	vector<double> ai, bi, ci, di;
 	for (int i = 0; i < size - 1; i++) {
 		ai.push_back(y[i]);
@@ -83,7 +81,7 @@ int main() {
 		xx_.push_back(temp);
 	}
 
-	//в каждом подинтервале создаём уравнение сплайновой кривой
+	//РІ РєР°Р¶РґРѕРј РїРѕРґРёРЅС‚РµСЂРІР°Р»Рµ СЃРѕР·РґР°С‘Рј СѓСЂР°РІРЅРµРЅРёРµ СЃРїР»Р°Р№РЅРѕРІРѕР№ РєСЂРёРІРѕР№
 	for (int i = 0; i < size_xx; i++) {
 		int k = 0;
 		for (int j = 0; j < size - 1; j++) {
@@ -99,7 +97,7 @@ int main() {
 		yy.push_back(temp);
 	}
 
-	//запись в файл
+	//Р·Р°РїРёСЃСЊ РІ С„Р°Р№Р»
 	std::ofstream output;
 	output.open("Spline.txt");
 	for (unsigned i = 0; i < size_xx; i++) {
