@@ -22,19 +22,6 @@ namespace Lab2
             file = fs;
         }
 
-        public IFile FileSystem
-        {
-            set
-            {
-                if (value is null) throw new ArgumentNullException();
-                file = value;
-            }
-            get
-            {
-                return file;
-            }
-        }
-
         public int MergeTemporaryFiles(string dir)
         {
 
