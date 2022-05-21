@@ -1,8 +1,0 @@
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\bin\Debug\Lab7_OS.exe
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\bin\Debug\Lab7_OS.pdb
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Laba7.csprojAssemblyReference.cache
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Laba7.View.Form1.resources
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Lab7_OS.Properties.Resources.resources
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Laba7.csproj.GenerateResource.cache
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Lab7_OS.exe
-C:\Users\ACER\Documents\2 UNIVERSITA\10 OS\Lab7_OS\Lab7_OS\obj\Debug\Lab7_OS.pdb
